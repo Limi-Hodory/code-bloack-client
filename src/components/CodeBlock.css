@@ -1,0 +1,30 @@
+.codeEditor-container{
+    height: 100vh;
+    
+}
+.parentEdit{
+    position: relative;
+}
+.code-block-text{
+    text-align: left;
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    z-index: 3; 
+    top: 0;
+}
+
+#codeEdit{
+    position: absolute;
+    border:none;
+    display: inline-block;
+    z-index: 3;
+    outline: none;
+    appearance: none;
+    background: none;
+    border-radius: none;
+    width: 100%;
+    left:0;
+    text-align: left;
+    opacity: 1%;
+}
