@@ -13,25 +13,21 @@ function App() {
     {id: 4, code: "create case"},
   ]
   function handleClick(itemId){
-    // find loops all items in arr
+    // loops all items in arr
     const item = arr.find(function(item){
       if(item.id == itemId){
         return true;
       }else{
         return false;
       }
-      // or return item.id == itemId;
     })
-    // or const item = arr.find(item => item.id == itemId);
     setSelectedCodeBlock(item)
   }
 
-  
-  // returns a component
+  // returns a CodeBlock component
   if(selectedCodeBlock.id !== 0){
     return (
       <div className="App">
-        {/* <h3>App main</h3> */}
         <CodeBlock codeBlock={selectedCodeBlock} />
       </div>
     )
@@ -43,15 +39,7 @@ function App() {
     )
   }
   
-  // return (
-  //   <div className="App">
-  //       <h3>App main</h3>
 
-  //       {/* Lobby is a component and it gets parameters and functions*/}
-  // //       {selectedCodeBlock.id !== 0 && <Lobby items={arr} mode={"test"} handleClick={handleClick}/>}
-  //       {codeBlock.length > 0 && <CodeBlock codeBlock={codeBlock}/>}
-  //   </div>
-  // );
  
 }
 

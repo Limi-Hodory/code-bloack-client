@@ -4,10 +4,13 @@
     height: 30vh;
     display: flex;
     justify-content: center;
+    
   }
   .input-area {
     position: relative;
     outline: none;
+    text-align: left;
+    
   }
 
   .edit-window{
@@ -25,6 +28,7 @@
     width: 100%;
     height: 35vh;
     z-index: 3;
+    
   }
   
   .textarea {
@@ -34,16 +38,19 @@
     width: 100%;
     height: 35vh;
     z-index: 3;
-  
     margin: 0;
-      padding: 0;
-      background: none;
-      border: none;
-      border-radius: 0;
-      outline: none;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-    opacity:1%
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    opacity:1%;
+      
   }
-  
+  #output{
+    text-align: left;
+    justify-content: left;
+  }
